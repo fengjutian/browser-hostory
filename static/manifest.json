@@ -1,0 +1,27 @@
+{
+"manifest_version": 3,
+"name": "History + Login Analyzer",
+"version": "1.0.0",
+"description": "导出浏览历史并分析网站登录历史（表单检测 + URL 关键词）",
+"permissions": [
+"history",
+"storage",
+"scripting",
+"activeTab"
+],
+"host_permissions": ["<all_urls>"],
+"background": {
+"service_worker": "background.js"
+},
+"action": {
+"default_title": "History & Login Analyzer",
+"default_popup": "popup.html"
+},
+"content_scripts": [
+{
+"matches": ["<all_urls>"],
+"js": ["contentScript.js"],
+"run_at": "document_start"
+}
+]
+}
