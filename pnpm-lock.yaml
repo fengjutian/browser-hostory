@@ -3865,7 +3865,7 @@ snapshots:
       json5: 2.2.3
       msgpackr: 1.11.5
       nullthrows: 1.1.1
-      semver: 7.7.2
+      semver: 7.7.1
 
   '@parcel/diagnostic@2.8.3':
     dependencies:

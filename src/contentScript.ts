@@ -22,7 +22,7 @@ function handleFormSubmit(ev: Event) {
     };
     // 上报到后台
     chrome.runtime.sendMessage({ type: 'report_login', payload }, (res) => {
-      // noop
+
     });
   } catch (e) {
     // ignore
